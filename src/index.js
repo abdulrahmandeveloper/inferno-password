@@ -1,6 +1,5 @@
 const pasinput = document.querySelector("#password");
-
-const passlength = 16;
+const passnumbers = document.querySelector("#passnumbers");
 
 const capitalletters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const smallleters = "abcdefghijklmnopqrstuvwxyz";
@@ -14,6 +13,8 @@ const allcharacters = capitalletters + smallleters + numbers + symbols;
 console.log(allcharacters);
 
 function generatepassword() {
+  const passlength = parseInt(passnumbers.value) || 10;
+
   let password = "";
 
   while (passlength > password.length) {

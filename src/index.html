@@ -17,11 +17,22 @@
   <body>
     <div class="pass-generator">
       <h2>Password Generator</h2>
+      <div class="length">
+        <h4>Plese specify the length of your password</h4>
+        <div class="numinput">
+          <input type="text" placeholder="Here,eg.12" id="passnumbers" class="" />
+        </div>
+      </div>
+
       <div class="input-box">
         <input id="password" type="text" />
-        <button id="copy" onclick="copypassword()"><i class="fa-regular fa-copy"></i></button>
+        <button id="copy" onclick="copypassword()">
+          <i class="fa-regular fa-copy"></i>
+        </button>
       </div>
-      <button id="gen-button" onclick="generatepassword()">Generate a Password</button>
+      <button id="gen-button" onclick="generatepassword()">
+        Generate a Password
+      </button>
     </div>
     <script src="./index.js"></script>
   </body>
